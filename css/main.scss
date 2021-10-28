@@ -1,0 +1,43 @@
+@import 'settings';
+@import 'animation';
+
+body{
+    color: $primary-color;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+}
+
+.title{
+    font-family: squid-game, sans-serif;
+    text-shadow: 4px 4px 10px #000000;
+    span{
+        font-size: 9vh;
+        color: $rose;
+    }
+}
+
+.button-box{
+    i{
+        font-size: 20vw;
+        color: $backgroundColor;
+        transition: ease-in .3s;
+        @include neomorphism;
+
+        &:active{
+            transform: scale(.97);
+        }
+    }
+    .btn-enter:hover{
+        color: $light-blue;
+        text-shadow: 0px 0px 10px $light-blue;
+    }
+
+    .btn-leave:hover{
+        color: $rose;
+        text-shadow: 0px 0px 10px $rose;
+    }
+}
+
