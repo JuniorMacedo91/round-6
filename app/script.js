@@ -1,7 +1,10 @@
 const btnEnter = document.querySelector('.btn-enter')
+const btnLeave= document.querySelector('.btn-leave')
 
 btnEnter.addEventListener('click',creatGeometricShapes )
 btnEnter.addEventListener('click', playAudio)
+btnEnter.addEventListener('click', enterWebSite)
+btnLeave.addEventListener('click', leaveWebSite)
 
 function creatGeometricShapes(){
     const introSection = document.querySelector('body')
@@ -20,11 +23,22 @@ function creatGeometricShapes(){
     
     settimeout(() => {
         shapes.remove()
-    }, 7000);
+    }, 6000);
 }
-
 
 function playAudio(){
     const greenLighSong = document.querySelector('#greenLighSong')
-    greenLighSong.play()
+    greenLighSong.play();
+}
+
+function enterWebSite(){
+    setTimeout(()=>{
+        location.href = "home.html"
+    }, 10000)
+}
+
+function leaveWebSite(){
+    setTimeout(()=>{
+        location.href = "leave.html"
+    }, 3000)
 }
