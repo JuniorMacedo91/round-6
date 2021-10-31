@@ -1,0 +1,136 @@
+@font-face {
+  font-family: squid-game;
+  src: url(../fonts/GameOfSquids.ttf);
+}
+
+.shape {
+  color: #F7E373;
+  text-shadow: 0px 0px 10px #F7E373;
+  -webkit-animation: roll 7s linear infinite;
+          animation: roll 7s linear infinite;
+}
+
+@-webkit-keyframes roll {
+  0% {
+    -webkit-transform: scale(0) translateY(0%) rotate(0deg);
+            transform: scale(0) translateY(0%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2) translateY(-500%) rotate(360deg);
+            transform: scale(2) translateY(-500%) rotate(360deg);
+  }
+}
+
+@keyframes roll {
+  0% {
+    -webkit-transform: scale(0) translateY(0%) rotate(0deg);
+            transform: scale(0) translateY(0%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2) translateY(-500%) rotate(360deg);
+            transform: scale(2) translateY(-500%) rotate(360deg);
+  }
+}
+
+.fadeOut {
+  opacity: 0;
+  -webkit-transition: opacity 3s linear;
+  transition: opacity 3s linear;
+}
+
+body {
+  background-color: #0B0B0B;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.title {
+  font-family: squid-game, sans-serif;
+  text-shadow: 4px 4px 10px #000000;
+  z-index: 4;
+}
+
+.title span {
+  font-size: 10vw;
+  color: #FF2F5D;
+}
+
+.button-box i {
+  font-size: 19vw;
+  color: #1e1e22;
+  -webkit-transition: ease-in .3s;
+  transition: ease-in .3s;
+  text-shadow: -4px -4px 10px #ffffff18, 4px 4px 10px #000000;
+}
+
+.button-box i:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.button-box .btn-enter:hover {
+  color: #00FFF0;
+  text-shadow: 0px 0px 10px #00FFF0;
+}
+
+.button-box .btn-leave:hover {
+  color: #FF2F5D;
+  text-shadow: 0px 0px 10px #FF2F5D;
+}
+
+.leave-section {
+  width: 100%;
+  height: 100vh;
+  z-index: 4;
+}
+
+.leave-section #visitorAmount {
+  color: #00FFF0;
+}
+
+.leave-section::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #FF2F5D;
+  -webkit-clip-path: polygon(76% 0, 100% 0, 100% 100%, 38% 100%);
+          clip-path: polygon(76% 0, 100% 0, 100% 100%, 38% 100%);
+}
+
+@media screen and (min-width: 992px) {
+  .button-box i {
+    font-size: 12vw;
+  }
+}
+
+.home-section {
+  width: 100%;
+  height: 100vh;
+  background: url(../assets/doll.png) no-repeat center;
+  background-size: cover;
+}
+
+.navbar-brand {
+  width: 1.5rem;
+}
+/*# sourceMappingURL=main.css.map */
