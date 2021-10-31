@@ -1,3 +1,4 @@
+const introSection =document.querySelector('.intro-section')
 const btnEnter = document.querySelector('.btn-enter')
 const btnLeave= document.querySelector('.btn-leave')
 
@@ -7,7 +8,7 @@ btnEnter.addEventListener('click', enterWebSite)
 btnLeave.addEventListener('click', leaveWebSite)
 
 function creatGeometricShapes(){
-    const introSection = document.querySelector('body')
+    const body = document.querySelector('body')
     const shapes = document.createElement('span')
 
     shapes.innerHTML += '<i class="shape far fa-circle"></i> ';
@@ -17,7 +18,7 @@ function creatGeometricShapes(){
     let size = Math.random() * 10;
     shapes.style.fontSize = `${size}rem`;
 
-    introSection.appendChild(shapes)
+    body.appendChild(shapes)
 
     setInterval(creatGeometricShapes, 2000)
     
@@ -25,6 +26,7 @@ function creatGeometricShapes(){
         shapes.remove()
     }, 6000);
 }
+
 
 function playAudio(){
     const greenLighSong = document.querySelector('#greenLighSong')
@@ -38,6 +40,7 @@ function enterWebSite(){
 }
 
 function leaveWebSite(){
+    introSection.classList.add('fadeOut')
     setTimeout(()=>{
         location.href = "leave.html"
     }, 3000)
