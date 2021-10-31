@@ -48,14 +48,18 @@ body{
     width: 100%;
     height: 100vh;
     z-index: 4;
-}
 
-.leave-section::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: $rose;
-    clip-path: polygon(76% 0, 100% 0, 100% 100%, 38% 100%);
+    #visitorAmount{
+        color: $light-blue;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: $rose;
+        clip-path: polygon(76% 0, 100% 0, 100% 100%, 38% 100%);
+    }
 }
 

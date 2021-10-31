@@ -109,6 +109,10 @@ body {
   z-index: 4;
 }
 
+.leave-section #visitorAmount {
+  color: #00FFF0;
+}
+
 .leave-section::before {
   content: '';
   position: absolute;
