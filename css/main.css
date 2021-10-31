@@ -112,7 +112,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(45deg, #007894 50%, #FF2F5D 50%);
+  background-color: #FF2F5D;
   -webkit-clip-path: polygon(76% 0, 100% 0, 100% 100%, 38% 100%);
           clip-path: polygon(76% 0, 100% 0, 100% 100%, 38% 100%);
 }
