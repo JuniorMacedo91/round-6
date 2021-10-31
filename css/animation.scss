@@ -18,3 +18,14 @@
     opacity: 0;
     transition: opacity 3s linear;
 }
+
+.title-wrapper{
+    transform: translateY(0px);
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-30px);}
+    100%{transform: translateY(0px);}
+}
