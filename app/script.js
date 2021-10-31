@@ -1,13 +1,13 @@
 const introSection =document.querySelector('.intro-section')
 const btnEnter = document.querySelector('.btn-enter')
 const btnLeave= document.querySelector('.btn-leave')
+const btnMenu = document.querySelector('.menu-btn')
 
 btnEnter.addEventListener('click',creatGeometricShapes )
 btnEnter.addEventListener('click', enterWebSite)
 btnEnter.addEventListener('click', playGreenLighSong)
 btnLeave.addEventListener('click', leaveWebSite)
 btnLeave.addEventListener('click', playHorrorEffect)
-
 
 function creatGeometricShapes(){
     const body = document.querySelector('body')
@@ -51,3 +51,4 @@ function playHorrorEffect(){
     const greenLighSong = document.querySelector('#horrorEffect')
     greenLighSong.play();
 }
+
