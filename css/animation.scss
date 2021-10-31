@@ -13,3 +13,8 @@
     90%{opacity: 1;}
     100%{transform: scale(2) translateY(-500%) rotate(360deg);}
 }
+
+.fadeOut{
+    opacity: 0;
+    transition: opacity 3s linear;
+}
