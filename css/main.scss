@@ -132,6 +132,7 @@ body{
 .navbar{
     position: fixed;
     z-index: 4;
+    left: 0;
 }
 
 .menu-wrapper{
@@ -156,6 +157,10 @@ body{
     &:hover{
         color: $rose;
     }
+}
+
+.title-box{
+    
 }
 
 @media screen and (min-width:992px) {
