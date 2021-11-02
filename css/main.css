@@ -112,15 +112,16 @@ body {
 }
 
 .title span {
-  font-size: 7vw;
+  font-size: 10vw;
   color: #FF2F5D;
 }
 
 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   background: -webkit-gradient(linear, left top, right top, from(black), to(transparent));
   background: linear-gradient(to right, black, transparent);
-  left: 0;
-  top: 0;
 }
 
 .button-box i {
@@ -166,8 +167,8 @@ body {
           clip-path: polygon(76% 0, 100% 0, 100% 100%, 38% 100%);
 }
 
-.home {
-  background: url(../assets/doll.png) no-repeat center;
+#home {
+  background: url(../assets/doll.png) no-repeat center red;
   background-size: cover;
 }
 
@@ -196,8 +197,8 @@ body {
   height: 3px;
   background: #fff;
   border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
 }
 
 .menu-btn_bar::before, .menu-btn_bar::after {
@@ -264,13 +265,40 @@ body {
   padding: 10px;
 }
 
+.title-box {
+  z-index: 3;
+}
+
+.title-box h1 {
+  color: #FF2F5D;
+}
+
 .nav-link {
-  text-transform: uppercase;
+  position: relative;
+  font-family: 'squid-game', sans-serif;
+  letter-spacing: 5px;
   color: white;
 }
 
 .nav-link:hover {
-  color: #FF2F5D;
+  color: white;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -1px;
+  background: -webkit-gradient(linear, left top, right top, from(#00FFF0), color-stop(80%, #FF2F5D));
+  background: linear-gradient(to right, #00FFF0, #FF2F5D 80%);
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 }
 
 @media screen and (min-width: 992px) {
