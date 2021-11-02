@@ -168,7 +168,7 @@ body {
 }
 
 #home {
-  background: url(../assets/doll.png) no-repeat center red;
+  background: url(../assets/doll.png) no-repeat center;
   background-size: cover;
 }
 
