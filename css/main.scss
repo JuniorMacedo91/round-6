@@ -21,15 +21,16 @@ body{
     text-shadow: 4px 4px 10px #000000;
     z-index:3;
     span{
-        font-size: 7vw;
+        font-size: 10vw;
         color: $rose;
     }
 }
 
 .overlay{
-    background: linear-gradient(to right, black, transparent);
-    left: 0;
+    position: absolute;
     top: 0;
+    left: 0;
+    background: linear-gradient(to right, #000000aa, transparent, transparent);
 }
 
 .button-box{
@@ -76,7 +77,7 @@ body{
 
 // Home Section
 
-.home{
+#home{
     background: url(../assets/doll.png) no-repeat center;
     background-size: cover;
 }
@@ -99,7 +100,7 @@ body{
     height: 3px;
     background: $primary-color;
     border-radius: 5px;
-    transition: all .5s ease-in-out;
+    transition: all .5s linear;
 
     &::before, &::after {
         content: '';
@@ -156,14 +157,42 @@ body{
     }
 }
 
-.nav-link{
-    text-transform: uppercase;
-    color: white;
-
-    &:hover{
+.title-box{
+    z-index: 3;
+    h1{
+        font-size: 3.5rem;
         color: $rose;
     }
 }
+
+.nav-link{
+    position: relative;
+    font-family: 'squid-game', sans-serif;
+    letter-spacing: 5px;
+    color: white;
+
+    &:hover{
+        color: white;
+    }
+
+    &:hover::after{
+        width: 100%;
+    }
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1px;
+    background: linear-gradient(to right, $light-blue, $rose 80%);
+    transition: .2s ease-in;
+}
+
+
+
 
 @media screen and (min-width:992px) {
     .button-box{
@@ -181,5 +210,38 @@ body{
 
     .menu-btn{
         display: none;
+    }
+
+    .title-box{
+        h1{
+            font-size: 7rem;
+            color: $rose;
+        }
+    }
+
+}
+
+// Main
+
+main{
+    section{
+        padding-top: 5rem;
+        h1{
+            font-size: 2.5rem;
+            color: $rose;
+        }
+        p{
+            text-align: justify;
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+
+.images{
+    img{
+        margin-top: -1rem;
+        width: 22vw;
+        z-index: 0;
     }
 }

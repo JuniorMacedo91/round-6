@@ -2,6 +2,7 @@ const introSection =document.querySelector('.intro-section')
 const btnEnter = document.querySelector('.btn-enter')
 const btnLeave= document.querySelector('.btn-leave')
 const btnMenu = document.querySelector('.menu-btn')
+const titleWrapper = document.querySelector('.title-wrapper')
 
 btnEnter.addEventListener('click',creatGeometricShapes )
 btnEnter.addEventListener('click', enterWebSite)
@@ -22,7 +23,7 @@ function creatGeometricShapes(){
 
     body.appendChild(shapes)
 
-    setInterval(creatGeometricShapes, 2000)
+    setInterval(creatGeometricShapes, 3000)
     
     settimeout(() => {
         shapes.remove()
@@ -30,8 +31,16 @@ function creatGeometricShapes(){
 }
 
 function enterWebSite(){
+
+    titleWrapper.innerHTML = `<div class="d-flex justify-content-center flex-column align-items-center">
+        <span class="title display-2 lh-lg">Carregando</span>
+        <div class="spinner-border text-danger" style="width: 4rem; height: 4rem;">
+            <span class="visually-hidden"></span>
+        </div>
+        </div>`;
+
     setTimeout(()=>{
-        location.href = "home.html"
+        location.href = "home.html";
     }, 10000)
 }
 
