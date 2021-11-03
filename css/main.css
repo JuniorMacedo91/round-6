@@ -120,8 +120,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+<<<<<<< HEAD
   background: -webkit-gradient(linear, left top, right top, from(#000000aa), color-stop(transparent), to(transparent));
   background: linear-gradient(to right, #000000aa, transparent, transparent);
+=======
+  background: -webkit-gradient(linear, left top, right top, from(black), to(transparent));
+  background: linear-gradient(to right, black, transparent);
+>>>>>>> 9484851936b71cbb5fa1cf29f7b5e35fa48c3f71
 }
 
 .button-box i {
@@ -270,7 +275,10 @@ body {
 }
 
 .title-box h1 {
+<<<<<<< HEAD
   font-size: 3.5rem;
+=======
+>>>>>>> 9484851936b71cbb5fa1cf29f7b5e35fa48c3f71
   color: #FF2F5D;
 }
 

@@ -30,7 +30,11 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+<<<<<<< HEAD
     background: linear-gradient(to right, #000000aa, transparent, transparent);
+=======
+    background: linear-gradient(to right, black, transparent);
+>>>>>>> 9484851936b71cbb5fa1cf29f7b5e35fa48c3f71
 }
 
 .button-box{
@@ -160,7 +164,10 @@ body{
 .title-box{
     z-index: 3;
     h1{
+<<<<<<< HEAD
         font-size: 3.5rem;
+=======
+>>>>>>> 9484851936b71cbb5fa1cf29f7b5e35fa48c3f71
         color: $rose;
     }
 }
@@ -173,6 +180,13 @@ body{
 
     &:hover{
         color: white;
+<<<<<<< HEAD
+=======
+    }
+
+    &:hover::after{
+        width: 100%;
+>>>>>>> 9484851936b71cbb5fa1cf29f7b5e35fa48c3f71
     }
 
     &:hover::after{
@@ -191,6 +205,20 @@ body{
     transition: .2s ease-in;
 }
 
+<<<<<<< HEAD
+=======
+.nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1px;
+    background: linear-gradient(to right, $light-blue, $rose 80%);
+    transition: .2s ease-in;
+}
+
+>>>>>>> 9484851936b71cbb5fa1cf29f7b5e35fa48c3f71
 
 
 
@@ -212,6 +240,7 @@ body{
         display: none;
     }
 
+<<<<<<< HEAD
     .title-box{
         h1{
             font-size: 7rem;
@@ -244,4 +273,6 @@ main{
         width: 22vw;
         z-index: 0;
     }
+=======
+>>>>>>> 9484851936b71cbb5fa1cf29f7b5e35fa48c3f71
 }
