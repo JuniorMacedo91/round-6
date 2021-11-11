@@ -1,0 +1,34 @@
+@media screen and (min-width:992px){
+    .button-box {
+        .btn{
+            font-size: 8rem;
+        }
+    }
+
+    nav{
+        background: linear-gradient(to bottom, #272727 30%, #272727ad, transparent);
+    }
+
+    .menu-wrapper{
+        position: relative;
+        height: 100%;
+        background-color: transparent;
+        opacity: 1;
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    // .title-box{
+    //     @include dFlex(flex-end, end)
+    // }
+}
+
+@media screen and (max-width:576px) {
+    .title-box{
+        span{
+            font-size: 42px;
+        }
+    }
+}
