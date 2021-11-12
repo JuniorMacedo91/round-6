@@ -28,3 +28,15 @@ nav{
 ::-webkit-scrollbar{
     display: none;
 }
+
+// Creation Section
+
+article{
+    text-align: justify;
+}
+.shapeWrapper{
+    position: relative;
+    img{
+        width: 24vw;
+    }
+}

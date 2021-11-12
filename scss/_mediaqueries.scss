@@ -6,7 +6,7 @@
     }
 
     nav{
-        background: linear-gradient(to bottom, #272727 30%, #272727ad, transparent);
+        background: linear-gradient(to bottom, #272727 50%, #272727ad, transparent);
     }
 
     .menu-wrapper{
@@ -19,16 +19,12 @@
     .menu-btn{
         display: none;
     }
-
-    // .title-box{
-    //     @include dFlex(flex-end, end)
-    // }
 }
 
 @media screen and (max-width:576px) {
     .title-box{
         span{
-            font-size: 42px;
+            font-size: 3.7rem;
         }
     }
 }
