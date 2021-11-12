@@ -1,0 +1,31 @@
+.shape{
+    color: #F7E373;
+    text-shadow: 0px 0px 10px #F7E373;
+    animation: roll 7s linear infinite;
+}
+
+@keyframes roll {
+    0%{
+        transform: scale(0) translateY(0%) rotate(0deg);
+        opacity: 0;
+    }
+    10%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{transform: scale(2) translateY(-500%) rotate(360deg);}
+}
+
+.fadeOut{
+    opacity: 0;
+    transition: opacity 3s linear;
+}
+
+.title-wrapper{
+    transform: translateY(0px);
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-30px);}
+    100%{transform: translateY(0px);}
+}
