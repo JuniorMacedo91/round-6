@@ -19,16 +19,12 @@
     .menu-btn{
         display: none;
     }
-
-    // .title-box{
-    //     @include dFlex(flex-end, end)
-    // }
 }
 
 @media screen and (max-width:576px) {
     .title-box{
         span{
-            font-size: 42px;
+            font-size: 3.7rem;
         }
     }
 }
