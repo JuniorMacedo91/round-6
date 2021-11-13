@@ -1,16 +1,14 @@
-<<<<<<< HEAD
 #home{
-    background: url(../dist/assets/doll.png) no-repeat center top;
+    background: 
+    url(../dist/assets/doll.png) no-repeat center;
     background-size: cover;
-    @include dFlex(flex-end,flex-start);
 }
 
-.overlay{
-    position: absolute;
+.home__content{
+    width: 100%;
     height: 100vh;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right, #000000e1, transparent 30%, transparent);
+    @include dFlex(flex-end,flex-start);
+    @include overlay(to top);
 }
 
 .logo{
@@ -22,7 +20,7 @@ nav{
 }
 
 .title-box{
-    padding-bottom: 5rem;
+    padding: 0rem 0rem 3rem 1.8rem;
     z-index: 3;
 }
 
@@ -41,35 +39,3 @@ article{
         width: 24vw;
     }
 }
-=======
-#home{
-    background: url(../dist/assets/doll.png) no-repeat center top;
-    background-size: cover;
-    @include dFlex(flex-end,flex-start);
-}
-
-.overlay{
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right, #000000e1, transparent 30%, transparent);
-}
-
-.logo{
-    width: 20px
-}
-
-nav{
-    z-index: 4;
-}
-
-.title-box{
-    padding-bottom: 5rem;
-    z-index: 3;
-}
-
-::-webkit-scrollbar{
-    display: none;
-}
->>>>>>> 0bbae221f995ebdc4f02ad31abdf863ddd6e8e48
