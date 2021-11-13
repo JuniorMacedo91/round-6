@@ -69,7 +69,7 @@ p:first-child:first-letter {
   color: #1e1e22;
   -webkit-transition: ease-in .3s;
   transition: ease-in .3s;
-  text-shadow: -4px -4px 10px #ffffff18, 4px 4px 10px #000000;
+  text-shadow: -4px -4px 10px #ffffff18, 4px 4px 10px #000000;
 }
 
 .btn:active {
