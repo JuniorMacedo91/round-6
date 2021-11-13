@@ -32,6 +32,18 @@ body{
     background: linear-gradient($gradient-position, #0B0B0B 0%, rgba(9, 9, 9, 0.96) 16.81%, rgba(7, 7, 7, 0.82) 27.13%, rgba(0, 0, 0, 0.59) 35.53%, rgba(0, 0, 0, 0.06) 46.09%),
 }
 
+p{
+    padding-bottom: 1rem;
+    line-height: 1.7rem;
+
+    &:first-child:first-letter{
+        font-size: 7rem;
+        float: left;
+        padding:10px 10px 10px 0px;
+        line-height: .6;
+    }
+}
+
 .emphasised-text{
     font-family: 'squid-game', sans-serif;
     text-shadow: 4px 4px 10px #000000;
