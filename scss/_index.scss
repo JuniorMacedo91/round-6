@@ -1,6 +1,19 @@
 .intro-section{
-    overflow: hidden;
     @include dFlex(center,center);
+    overflow: hidden;
+}
+
+#carouselBg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+
+    img{
+        width: 100%;
+        height: 60vh;
+        clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+    }
 }
 
 .btn{

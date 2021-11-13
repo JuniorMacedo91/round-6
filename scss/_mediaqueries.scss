@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 @media screen and (min-width:992px){
-    .button-box {
+    #button-box {
         .btn{
             font-size: 8rem;
         }
@@ -28,35 +27,4 @@
             font-size: 3.7rem;
         }
     }
-=======
-@media screen and (min-width:992px){
-    .button-box {
-        .btn{
-            font-size: 8rem;
-        }
-    }
-
-    nav{
-        background: linear-gradient(to bottom, #272727 30%, #272727ad, transparent);
-    }
-
-    .menu-wrapper{
-        position: relative;
-        height: 100%;
-        background-color: transparent;
-        opacity: 1;
-    }
-
-    .menu-btn{
-        display: none;
-    }
-}
-
-@media screen and (max-width:576px) {
-    .title-box{
-        span{
-            font-size: 3.7rem;
-        }
-    }
->>>>>>> 0bbae221f995ebdc4f02ad31abdf863ddd6e8e48
 }
