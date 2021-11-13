@@ -2,12 +2,18 @@ const introSection = document.querySelector('.intro-section')
 const btnEnter = document.querySelector('.btn__enter')
 const btnLeave= document.querySelector('.btn__leave')
 const titleWrapper = document.querySelector('.title-wrapper')
+const buttonBox = document.getElementById('button-box')
 
-btnEnter.addEventListener('click',creatGeometricShapes )
-btnEnter.addEventListener('click', enterWebSite)
-btnEnter.addEventListener('click', playGreenLighSong)
-btnLeave.addEventListener('click', leaveWebSite)
-btnLeave.addEventListener('click', playHorrorEffect)
+btnEnter.addEventListener('click', () =>{
+    creatGeometricShapes();
+    enterWebSite();
+    playGreenLighSong();
+})
+
+btnLeave.addEventListener('click', ()=>{
+    leaveWebSite();
+    playHorrorEffect();
+})
 
 function creatGeometricShapes(){
     const body = document.querySelector('body')
@@ -24,16 +30,18 @@ function creatGeometricShapes(){
 
     setInterval(creatGeometricShapes, 3000)
     
-    settimeout(() => {
+    setTimeout(() => {
         shapes.remove()
     }, 6000);
 }
 
 function enterWebSite(){
 
+    buttonBox.style.display="none";
+
     titleWrapper.innerHTML = `<div class="d-flex justify-content-center flex-column align-items-center">
-        <span class="emphasised-text display-2 lh-lg">Carregando</span>
-        <div class="spinner-border text-danger" style="width: 4rem; height: 4rem;">
+        <span class="emphasised-text fs-1">Carregando</span>
+        <div class="spinner-border text-danger" style="width: 2rem; height: 2rem;">
             <span class="visually-hidden"></span>
         </div>
         </div>`;

@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg container-fluid position-fixed">
-            <img class="logo" src="./assets/logo.svg" alt="Logo squid game" loading="lazy">
+        <nav class="navbar navbar-expand-lg container-fluid position-fixed" loading="lazy">
+            <img class="logo" src="./assets/logo.svg" alt="Logo squid game">
 
             <div class="menu-btn" role="button">
                 <div class="menu-btn__burger "></div>
@@ -30,59 +30,91 @@
     </header>
 
     <main >
-        <section id="home" class="container-fluid vh-100 ">
-            <div class="title-box container emphasised-text">
-                <span >Round 6</span>
-                <p>Nem tudo é apenas uma brincadeira</p>
+        <section id="home" class="vh-100 ">
+            <div class="home__content">
+                <div class="title-box container emphasised-text">
+                    <span >Round 6</span>
+                    <p>Nem tudo é apenas uma brincadeira</p>
+                </div>
             </div>
-
-            <div class="container overlay"></div>
         </section>
 
         <section id="creation" >
 
-            <div class="fixed-bg"><img class="img-fluid" src="./assets/room.png" alt=""></div>
+            <div><img class="img-fluid" src="./assets/room.png" alt=""></div>
 
-            <article class="container p-5">
-                <p>A mais nova série da Netflix, está bombando.</p>
-
-                <p>Round 6 (Squid Game) é uma série sul – coreana original da Netflix, criado pelo diretor Hwang Dong-hyuk em 2008. O diretor teve a idéia, quando também estava com muitas dívidas e chegou a pensar que se tivesse um jogo assim, iria participar.</p>
-                <p>A demora em lançar a série se deu, pois, na época foi considerado muito brutal, então não estava fácil conseguir patrocínios.
-                </p>
+            <article class="article-wrapper container p-5  ">
+                <div class="row">
+                    <div class="content-first col-md">
+                        <h2 class="display-4 text-uppercase">A mais nova série da Netflix está bombando.</h2>
+                    </div>
+                    <div class="content-second col-md">
+                        <p>Round 6 (Squid Game) é uma série sul – coreana original da Netflix, criado pelo diretor Hwang Dong-hyuk em 2008. O diretor teve a idéia, quando também estava com muitas dívidas e chegou a pensar que se tivesse um jogo assim, iria participar.</p>
+                        <p>A demora em lançar a série se deu, pois, na época foi considerado muito brutal, então não estava fácil conseguir patrocínios.
+                        </p>
+                    </div>
+                </div>
             </article>
             
             <div class="shapeWrapper text-center">
                 <img  src="./assets/circle.svg" alt="circle shape">
                 <img  src="./assets/triangle.svg" alt="traingle shape">
                 <img  src="./assets/star.svg" alt="star shape">
-                <img  src="./assets/umbruela.png" alt="">
+                <img  src="./assets/umbruela.png" alt="umbruela shape">
             </div>
         </section>
 
         <section id="synopsis" class="container">
 
-            <div class="row">
-                <div class="col">
+            <article class="row ">
+                <div class="col-md-6">
                     <p>A série mostra um jogo de vida ou morte, 
                         literalmente, onde 456 pessoas são “ convidadas”
                         para jogar e concorrer a um prêmio, no valor de 45,6 bilhões de wons.</p>
                         <p>Os escolhidos estão cheios de dívidas. Desesperados por dinheiro,  aceitam o desafio, mesmo sem saber as consequências.</p>
                         <p>Os desafios são representados por jogos da infância, com cenários lúdicos e aparentemente tranquilos, até começar.</p>
                 </div>
-                <div class="col"></div>
-            </div>
-            <div class="row">
-                <div class="col"></div>
+                <div class="col images">
+                    <img class="img-fluid" src="../dist/assets/game-proposal.png" alt="game proposal scene">
+                </div>
+            </article>
+            <article class="row">
+                <div class="col-md-6">
+                    <img src="./assets/card.png" alt="business card scene" class="img-fluid">
+                </div>
                 <div class="col">
                     <p>Gi Hoon, um dos protagonistas, viciado em jogos, aceita participar após um convite feito em mais uma de suas apostas.
                     </p>
                     <p>O personagem fica receoso por um tempo, mas decide fazer a ligação para o número que estava no cartão.
                     </p>
                 </div>
-            </div>
+            </article>
         </section>
 
-        <section id="games vh-100"></section>
+        <section id="games vh-100">
+
+            <div class="mosaico">
+                <div class="item-1">
+                    <img src="./assets/red-light-green-light.png" alt="">
+                </div>
+                <div class="item-2">
+                    <img src="./assets/honeycomb.png" alt="">
+                </div>
+                <div class="item-3">
+                    <img src="./assets/tug-of-war.png" alt="">
+                </div>
+                <div class="item-4">
+                    <img src="./assets/marbles.png" alt="">
+                </div>
+                <div class="item-5">
+                    <img src="./assets/glass-bridge.png" alt="">
+                </div>
+                <div class="item-6">
+                    <img src="./assets/squid-game.png" alt="">
+                </div>
+            </div>
+
+        </section>
         <section id="curiosities vh-100"></section>
         
     </main>
