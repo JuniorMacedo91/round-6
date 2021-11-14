@@ -5,14 +5,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-@font-face {
-  font-family: squid-game;
-  src: url(../fonts/GameOfSquids.ttf);
-}
-
 p {
-  padding-bottom: 1rem;
-  line-height: 1.7rem;
+  padding: 1rem;
+  line-height: 1.5rem;
 }
 
 p:first-child:first-letter {
@@ -31,6 +26,11 @@ p:first-child:first-letter {
 .emphasised-text span {
   font-size: 10vw;
   color: #FF2F5D;
+}
+
+@font-face {
+  font-family: squid-game;
+  src: url(../fonts/GameOfSquids.ttf);
 }
 
 .intro-section {
@@ -129,16 +129,42 @@ nav {
   display: none;
 }
 
+#synopsis .game-proposal-img {
+  position: relative;
+}
+
+#synopsis .game-proposal-img .overlay {
+  background: -webkit-gradient(linear, left top, right top, from(#0B0B0B), color-stop(16.81%, rgba(9, 9, 9, 0.96)), color-stop(27.13%, rgba(7, 7, 7, 0.82)), color-stop(35.53%, rgba(0, 0, 0, 0.59)), color-stop(46.09%, rgba(0, 0, 0, 0.06)));
+  background: linear-gradient(to right, #0B0B0B 0%, rgba(9, 9, 9, 0.96) 16.81%, rgba(7, 7, 7, 0.82) 27.13%, rgba(0, 0, 0, 0.59) 35.53%, rgba(0, 0, 0, 0.06) 46.09%);
+}
+
+#synopsis .card-img {
+  position: relative;
+}
+
+#synopsis .card-img .overlay {
+  background: -webkit-gradient(linear, right top, left top, from(#0B0B0B), color-stop(16.81%, rgba(9, 9, 9, 0.96)), color-stop(27.13%, rgba(7, 7, 7, 0.82)), color-stop(35.53%, rgba(0, 0, 0, 0.59)), color-stop(46.09%, rgba(0, 0, 0, 0.06)));
+  background: linear-gradient(to left, #0B0B0B 0%, rgba(9, 9, 9, 0.96) 16.81%, rgba(7, 7, 7, 0.82) 27.13%, rgba(0, 0, 0, 0.59) 35.53%, rgba(0, 0, 0, 0.06) 46.09%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .shapeWrapper {
   position: relative;
 }
 
-.shapeWrapper img {
-  width: 24vw;
+.shapeWrapper i {
+  font-size: 20vw;
 }
 
 #creation .article-wrapper .content-second {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 .mosaico {
@@ -504,6 +530,82 @@ nav {
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+}
+
+.shapeWrapper .fa-circle {
+  -webkit-animation: greenColor 4s ease-in-out infinite;
+          animation: greenColor 4s ease-in-out infinite;
+}
+
+.shapeWrapper .bi-triangle-fill {
+  -webkit-animation: redColor 4s ease-in-out infinite;
+          animation: redColor 4s ease-in-out infinite;
+}
+
+.shapeWrapper .fa-star {
+  -webkit-animation: yellowColor 4s ease-in-out infinite;
+          animation: yellowColor 4s ease-in-out infinite;
+}
+
+.shapeWrapper .fa-umbrella {
+  -webkit-animation: blueColor 4s ease-in-out infinite;
+          animation: blueColor 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes greenColor {
+  20% {
+    color: #28dd34;
+    text-shadow: 0px 0px 10px #02ff13;
+  }
+}
+
+@keyframes greenColor {
+  20% {
+    color: #28dd34;
+    text-shadow: 0px 0px 10px #02ff13;
+  }
+}
+
+@-webkit-keyframes redColor {
+  40% {
+    color: #fb004b;
+    text-shadow: 0px 0px 10px #ff2d6c;
+  }
+}
+
+@keyframes redColor {
+  40% {
+    color: #fb004b;
+    text-shadow: 0px 0px 10px #ff2d6c;
+  }
+}
+
+@-webkit-keyframes yellowColor {
+  60% {
+    color: #ffc400;
+    text-shadow: 0px 0px 10px #fbff00;
+  }
+}
+
+@keyframes yellowColor {
+  60% {
+    color: #ffc400;
+    text-shadow: 0px 0px 10px #fbff00;
+  }
+}
+
+@-webkit-keyframes blueColor {
+  80% {
+    color: #0073ff;
+    text-shadow: 0px 0px 10px #0073ff;
+  }
+}
+
+@keyframes blueColor {
+  80% {
+    color: #0073ff;
+    text-shadow: 0px 0px 10px #0073ff;
   }
 }
 /*# sourceMappingURL=main.css.map */

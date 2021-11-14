@@ -29,3 +29,24 @@
     50%{transform: translateY(-30px);}
     100%{transform: translateY(0px);}
 }
+
+.shapeWrapper{
+    .fa-circle{animation: greenColor 4s ease-in-out infinite;}
+    .bi-triangle-fill{animation: redColor 4s ease-in-out infinite}
+    .fa-star{animation: yellowColor 4s ease-in-out infinite;}
+    .fa-umbrella{animation: blueColor 4s ease-in-out infinite;}
+}
+
+@keyframes greenColor {
+    20%{color: #28dd34; text-shadow:  0px 0px 10px #02ff13}  
+}
+@keyframes redColor {
+    40%{color: #fb004b; text-shadow:  0px 0px 10px #ff2d6c}
+}
+@keyframes yellowColor {
+    60%{color: #ffc400; text-shadow:  0px 0px 10px #fbff00}
+}
+@keyframes blueColor {
+    80%{color: #0073ff; text-shadow:  0px 0px 10px #0073ff}
+    
+}

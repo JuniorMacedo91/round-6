@@ -27,24 +27,48 @@ nav{
     display: none;
 }
 
+//synopsis
+#synopsis{
+    .game-proposal-img{
+        position: relative;
+        .overlay{
+            @include overlay(to right)
+        }
+    }
+
+    .card-img{
+        position: relative;
+        .overlay{
+            @include overlay(to left)
+        }
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 // Creation Section
 .shapeWrapper{
     position: relative;
-    img{
-        width: 24vw;
+    i{
+        font-size: 20vw;
     }
 }
 
 #creation{
     .article-wrapper{
         .content-second{
-            margin-top: 8rem;
+            margin-top: 6rem;
         }
     }
 }
 .mosaico{
     display: grid;
-
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     img{
