@@ -28,7 +28,7 @@ function creatGeometricShapes(){
 
     body.appendChild(shapes)
 
-    setInterval(creatGeometricShapes, 3000)
+    setInterval(creatGeometricShapes, 2000)
     
     setTimeout(() => {
         shapes.remove()
