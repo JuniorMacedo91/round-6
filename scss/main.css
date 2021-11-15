@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Ubuntu:wght@500&display=swap");
 body {
-  background-color: #0B0B0B;
+  background-color: #0b0b0b;
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
 }
 
 p {
-  padding: 1rem 0px;
+  padding: 10px 0px;
   line-height: 1.5rem;
 }
 
@@ -26,6 +26,10 @@ p:first-child:first-letter {
 .emphasised-text span {
   font-size: 10vw;
   color: #FF2F5D;
+}
+
+section {
+  padding: 2rem 0px;
 }
 
 @font-face {
@@ -107,6 +111,11 @@ p:first-child:first-letter {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: -webkit-gradient(linear, left bottom, left top, from(#0B0B0B), color-stop(16.81%, rgba(9, 9, 9, 0.96)), color-stop(27.13%, rgba(7, 7, 7, 0.82)), color-stop(35.53%, rgba(0, 0, 0, 0.59)), color-stop(46.09%, rgba(0, 0, 0, 0.06)));
   background: linear-gradient(to top, #0B0B0B 0%, rgba(9, 9, 9, 0.96) 16.81%, rgba(7, 7, 7, 0.82) 27.13%, rgba(0, 0, 0, 0.59) 35.53%, rgba(0, 0, 0, 0.06) 46.09%);
 }
@@ -133,6 +142,11 @@ nav {
 }
 
 #synopsis .game-proposal-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#0B0B0B), color-stop(16.81%, rgba(9, 9, 9, 0.96)), color-stop(27.13%, rgba(7, 7, 7, 0.82)), color-stop(35.53%, rgba(0, 0, 0, 0.59)), color-stop(46.09%, rgba(0, 0, 0, 0.06)));
   background: linear-gradient(to right, #0B0B0B 0%, rgba(9, 9, 9, 0.96) 16.81%, rgba(7, 7, 7, 0.82) 27.13%, rgba(0, 0, 0, 0.59) 35.53%, rgba(0, 0, 0, 0.06) 46.09%);
 }
@@ -142,16 +156,13 @@ nav {
 }
 
 #synopsis .card-img .overlay {
-  background: -webkit-gradient(linear, right top, left top, from(#0B0B0B), color-stop(16.81%, rgba(9, 9, 9, 0.96)), color-stop(27.13%, rgba(7, 7, 7, 0.82)), color-stop(35.53%, rgba(0, 0, 0, 0.59)), color-stop(46.09%, rgba(0, 0, 0, 0.06)));
-  background: linear-gradient(to left, #0B0B0B 0%, rgba(9, 9, 9, 0.96) 16.81%, rgba(7, 7, 7, 0.82) 27.13%, rgba(0, 0, 0, 0.59) 35.53%, rgba(0, 0, 0, 0.06) 46.09%);
-}
-
-.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#0B0B0B), color-stop(16.81%, rgba(9, 9, 9, 0.96)), color-stop(27.13%, rgba(7, 7, 7, 0.82)), color-stop(35.53%, rgba(0, 0, 0, 0.59)), color-stop(46.09%, rgba(0, 0, 0, 0.06)));
+  background: linear-gradient(to left, #0B0B0B 0%, rgba(9, 9, 9, 0.96) 16.81%, rgba(7, 7, 7, 0.82) 27.13%, rgba(0, 0, 0, 0.59) 35.53%, rgba(0, 0, 0, 0.06) 46.09%);
 }
 
 .shapeWrapper {
@@ -166,11 +177,43 @@ nav {
   margin-top: 6rem;
 }
 
+#games img {
+  -webkit-box-shadow: 0px 6px 10px black;
+          box-shadow: 0px 6px 10px black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
 #games .red-light-green-light, #games .squid-game {
-  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.image-wrapper {
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.image-wrapper:hover .mosaico-text-overlay {
+  height: 100%;
+}
+
+.image-wrapper .mosaico-text-overlay {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 0;
+  bottom: 0;
+  background-color: #fd4400ba;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.image-wrapper .mosaico-text-overlay h4 {
+  text-transform: uppercase;
 }
 
 .leave-section {

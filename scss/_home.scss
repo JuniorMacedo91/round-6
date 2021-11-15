@@ -1,3 +1,4 @@
+//Home Section
 #home{
     background: url(../dist/assets/doll.png) no-repeat center;
     background-size: cover;
@@ -27,7 +28,7 @@ nav{
     display: none;
 }
 
-//synopsis
+//synopsis Section
 #synopsis{
     .game-proposal-img{
         position: relative;
@@ -42,14 +43,6 @@ nav{
             @include overlay(to left)
         }
     }
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 // Creation Section
@@ -70,9 +63,42 @@ nav{
 
 //games
 #games{
+    img{
+        box-shadow: 0px 6px 10px rgb(0, 0, 0);
+        border-radius:5px;
+        overflow: hidden;
+    }
+
     .red-light-green-light, .squid-game{
         height:100%;
         object-fit: cover;
     }
 }
+
+.image-wrapper{
+    position: relative;
+    border-radius:5px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover .mosaico-text-overlay{
+        height: 100%;
+    }
+
+    .mosaico-text-overlay{  
+        position: absolute;
+        width: 100%;
+        left: 0;
+        height: 0;
+        bottom: 0;
+        background-color: #fd4400ba;
+        transition: .5s ease;
+
+        h4{
+            text-transform: uppercase;
+        }
+        
+    }
+}
+
 
