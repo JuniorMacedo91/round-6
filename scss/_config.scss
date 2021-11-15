@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Ubuntu:wght@300;500&display=swap');
 
 $primary-color: #FF2F5D;
 $secondary-color: #00FFF0;
@@ -14,10 +14,13 @@ body{
 
 p{
     padding: 10px 0px;
+    font-weight: 300;
+    text-align: justify;
     line-height: 1.5rem;
 
     &:first-child:first-letter{
         font-size: 7rem;
+        font-weight: 500;
         float: left;
         padding:10px 10px 10px 0px;
         line-height: .6;
@@ -37,6 +40,10 @@ p{
 
 section{
     padding: 2rem 0px;
+}
+
+footer{
+    background-color: rgb(34, 34, 34);
 }
 
 @font-face {
