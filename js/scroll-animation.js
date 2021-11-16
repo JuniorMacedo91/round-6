@@ -30,4 +30,4 @@ if(target.length){
     window.addEventListener('scroll', debounce(scrollAnimation), 200 )
 }
 
-scrollAnimation()
+// scrollAnimation()
