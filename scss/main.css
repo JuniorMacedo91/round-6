@@ -220,6 +220,11 @@ nav {
   text-transform: uppercase;
 }
 
+#curiosities img {
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+}
+
 .leave-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,5 +565,27 @@ nav {
     color: #0073ff;
     text-shadow: 0px 0px 10px #0073ff;
   }
+}
+
+[data-scrollAnimation] {
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+[data-scrollAnimation="left"] {
+  -webkit-transform: translate3d(-50px, 0, 0);
+          transform: translate3d(-50px, 0, 0);
+}
+
+[data-scrollAnimation="right"] {
+  -webkit-transform: translate3d(50px, 0, 0);
+          transform: translate3d(50px, 0, 0);
+}
+
+[data-scrollAnimation].animate {
+  opacity: 1;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
 }
 /*# sourceMappingURL=main.css.map */

@@ -50,3 +50,23 @@
     80%{color: #0073ff; text-shadow:  0px 0px 10px #0073ff}
     
 }
+
+//Scroll animation
+
+[data-scrollAnimation]{
+    opacity: 0;
+    transition:.3s;
+}
+
+[data-scrollAnimation="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-scrollAnimation="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-scrollAnimation].animate{
+    opacity: 1;
+    transform: translate3d(0px,0px,0px);
+}
