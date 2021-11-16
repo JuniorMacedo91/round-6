@@ -32,20 +32,25 @@ The main goal about doing it was created something from scratch and put into pra
 
 ## Javascript Main Challenges:
 
-- Structuring API;
-- Improving callback functions;
-- Understand object.entries();
-- Get values from selectIndex() propriety;
+- To improve Clean Code;
+- Structuring Count API;
+- How to Create menu mobile;
+- How to create scroll animation;
 
-## CSS Main Challenges:
-- SVG Animations;
-- Build stroke - dasharray and stroke-dashoffeset; 
-- Keyframes.
+## CSS / Sass / Bootstrap Main Challenges:
+- How to creat a better architecture using Sass;
+  - The importance about a great file structure;
+  - How mixin, functions, include and extend work
+- To understand how Boostrap works; 
+  - How grid works with Bootstrap;
+  - Pros and cons about using it;
   
 ## Skills:
 
 [![HTML](https://img.shields.io/badge/HTML-red?style=for-the-badge&logo=HTML5&labelColor=black)](https://github.com/JuniorMacedo91)
 [![CSS](https://img.shields.io/badge/CSS3-blue?style=for-the-badge&logo=CSS3&labelColor=black)](https://github.com/JuniorMacedo91)
+[![Bootstrap](https://img.shields.io/badge/bootstrap-blueviolet?style=for-the-badge&logo=bootstrap&labelColor=black)](https://github.com/JuniorMacedo91)
+[![Sass](https://img.shields.io/badge/Sass-pink?style=for-the-badge&logo=sass&labelColor=black)](https://github.com/JuniorMacedo91)
 [![JavaScript](https://img.shields.io/badge/javascript-yellow?style=for-the-badge&logo=javascript&labelColor=black)](https://github.com/JuniorMacedo91)
 [![Figma](https://img.shields.io/badge/figma-teal?style=for-the-badge&logo=figma&labelColor=black)](https://github.com/JuniorMacedo91)
 
