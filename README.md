@@ -7,7 +7,6 @@
 </p>
 
 
-
 # About:
 Round 6 application is a website to present all about this new series, that is so popular all over the world.
 
