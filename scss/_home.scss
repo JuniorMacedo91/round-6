@@ -24,6 +24,10 @@ nav{
     z-index: 3;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 //synopsis Section
 #synopsis{
     .game-proposal-img{

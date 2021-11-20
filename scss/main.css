@@ -39,10 +39,6 @@ footer {
   background-color: #222222;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 @font-face {
   font-family: squid-game;
   src: url(../fonts/GameOfSquids.ttf);
@@ -142,6 +138,10 @@ nav {
 .title-box {
   padding: 0rem 0rem 3rem 1.8rem;
   z-index: 3;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 #synopsis .game-proposal-img {
@@ -567,7 +567,6 @@ nav {
   }
 }
 
-Scroll animation
 [data-scrollAnimation] {
   opacity: 0;
   -webkit-transition: .3s;
